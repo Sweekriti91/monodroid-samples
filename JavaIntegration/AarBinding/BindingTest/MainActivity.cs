@@ -7,11 +7,13 @@ using Android.Widget;
 using Android.OS;
 using Android.Views.InputMethods;
 using Com.Xamarin.Textcounter;
+using AndroidX.AppCompat.App;
+using Button = Android.Widget.Button;
 
 namespace BindingTest
 {
     [Activity(Label = "BindingTest", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity
+    public class MainActivity : AppCompatActivity
     {
         InputMethodManager imm;
 
