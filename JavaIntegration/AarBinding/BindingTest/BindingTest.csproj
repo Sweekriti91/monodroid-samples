@@ -9,7 +9,7 @@
 	 <!--<SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'net6.0-android'">31.0</SupportedOSPlatformVersion>-->
     <RootNamespace>BindingTest</RootNamespace>
     <AssemblyName>BindingTest</AssemblyName>
-    <SupportedOSPlatformVersion>28.0</SupportedOSPlatformVersion>
+    <SupportedOSPlatformVersion>29.0</SupportedOSPlatformVersion>
   </PropertyGroup>
 
 <!-- 
@@ -57,6 +57,9 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup> -->
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\AarBinding\AarBinding.csproj" />
   </ItemGroup>
